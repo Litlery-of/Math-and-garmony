@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+{% comment %}Наследование шаблона для шаблонов{% endcomment %}
+
+{% block main %}
+  {% comment %}В шаблон можно подставлять логику в виде УО{% endcomment %}
+  {% if some_bool_value %}
+    <p>Первая ветка УО</p>
+  {% elif some_number_value == 15 and some_bool_value == False %}
+    <p><i class="fas fa-user">Вторая ветка УО</i></p>
+  {% else %}
+    <p>Третья ветка УО</p>
+  {% endif %}
+  
+  {% comment %}В шаблонах можно использовать перебор{% endcomment %}
+  <ul>
+    {% for text in texts %}
+      <li>{{ text }}</li>
+    {% endfor %}
+  </ul>
+  
+  {% comment %}В шаблонах (если ваша функция render позволяет) можно использовать функции, которые возвращают то{% endcomment %}
+  {% comment %}что можно подставить в файл{% endcomment %}
+  {% lorem 3 p random %}
+{% endblock %}

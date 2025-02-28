@@ -1,0 +1,57 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block style %}
+
+    {% endblock %}
+    {% block scripts %}
+
+      {% comment %}Указываем, какой нам файл нужен{% endcomment %}
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="{% static 'my_site/styles/base.css' %}" />
+
+    {% endblock %}
+    <title>{{ page_title }}</title>
+  </head>
+  <body>
+    {% comment %}В шаблоне для шаблонов можно делать блоки, наследники могут{% endcomment %}
+    {% comment %}1. Не трогать их, тогда то, что указано в блоке будет сохранено;{% endcomment %}
+    {% comment %}2. Могут менять их -- тогда у блоков будет новое содержимое{% endcomment %}
+    <header>
+      <hr />
+      {% block header %}
+        {% include "base/menu.html" %}
+        {% comment %}Можно подключать код из одного шаблона в другой{% endcomment %}
+      {% endblock %}
+      <hr />
+    </header>
+    <main>
+      <hr />
+      {% block main %}
+
+      {% endblock %}
+      <hr />
+    </main>
+    <footer>
+      <hr />
+      {% block footer %}
+      <p>
+        ПЕРВЫЙ ФУТЕР 
+      </p>
+      {% endblock %}
+      <hr />
+      {% block two_footer %}
+        <p>
+          ПУСТО
+        </p>
+      {% endblock  %}
+      <hr />
+    </footer>
+  </body>
+</html>
