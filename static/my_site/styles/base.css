@@ -1,5 +1,17 @@
-main {
+header {
+    font-size: 20px;
+}
 
-    background-color: red;
-    color: white;
+main {
+    font-size: 30px;
+} 
+
+.paragraph {
+    /* padding: 100px; */
+    margin-top: 20px;
+}
+
+body {
+    background-color:blue; /* Голубой цвет */
+    min-height: 100vh;
 }
