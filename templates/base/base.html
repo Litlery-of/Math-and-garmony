@@ -14,21 +14,29 @@
     {% endblock %}
     <title>{{ page_title }}</title>
   </head>
-  <body class="container">
+  <body>
     <header>
-      {% block header %}
-        {% include "base/menu.html" %}
-      {% endblock %}
+      <div class="container">
+        {% comment %} <div class="bg-danger"> {% endcomment %}
+          {% block header %}
+            {% include "base/menu.html" %}
+          {% endblock %}
+        {% comment %} </div> {% endcomment %}
+      </div>
     </header>
     <main>
-      {% block main %}
-
-      {% endblock %}
+      <div class="container">
+        {% block main %}
+          
+        {% endblock %}
+      </div>
     </main>
     <footer>
-      {% block footer %}
+      <div class="container">
+        {% block footer %}
 
-      {% endblock %}
+        {% endblock %}
+      </div>
     </footer>
   </body>
 </html>
