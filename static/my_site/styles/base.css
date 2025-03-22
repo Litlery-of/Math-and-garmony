@@ -7,7 +7,12 @@ header {
 main {
     font-size: 30px;
     color: white;
-} 
+}
+
+main2 {
+    font-size: 30px;
+    color: white;
+}
 
 .paragraph {
     /* padding: 100px; */
