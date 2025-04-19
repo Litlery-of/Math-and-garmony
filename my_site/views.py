@@ -19,3 +19,11 @@ def fibbonacci_numbers(request: HttpRequest) -> HttpResponse:
     context = {"page_title": "Числа Фиббоначи"}
     return render(request, "my_site/fibbonacci_numbers.html", context)
 
+def golden_ratio_demo(request):
+    # Пример данных для демо-страницы
+    context = {
+        "title": "Золотое сечение в веб-дизайне",
+        "content": "Пример текста, который будет масштабироваться...",
+        "image_url": "/static/images/Golden_Ratio_2.png",
+    }
+    return render(request, 'my_site/demo.html', context)

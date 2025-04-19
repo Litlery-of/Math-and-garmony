@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Режим "До/После"</title>
+    <link rel="stylesheet" href="{% static 'my_site/styles/base.css' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Ползунок -->
+        <div class="slider-container">
+            <input type="range" min="0" max="100" value="50" class="slider" id="goldenRatioSlider">
+            <div class="slider-labels">
+                <span>Обычный дизайн</span>
+                <span>Золотое сечение</span>
+            </div>
+        </div>
+
+        <!-- Контент для сравнения -->
+        <div class="comparison-wrapper">
+            <!-- Оригинальная версия -->
+            <div class="original-version">
+                <h1>{{ title }}</h1>
+                <img src="{{ image_url }}" alt="Demo Image">
+                <p>{{ content }}</p>
+            </div>
+
+            <!-- Версия с золотым сечением -->
+            <div class="golden-version">
+                <h1>{{ title }}</h1>
+                <img src="{{ image_url }}" alt="Demo Image">
+                <p>{{ content }}</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'my_site/js/slider.js' %}"></script>
+</body>
+</html>

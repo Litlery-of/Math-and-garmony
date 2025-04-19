@@ -23,4 +23,5 @@ urlpatterns = [path("", my_site.views.index),
         path("golden_ratio/", my_site.views.golden_ratio),
         path("fractals/", my_site.views.fractals),
         path("fibbonacci_numbers/", my_site.views.fibbonacci_numbers),
+        path('demo/', my_site.views.golden_ratio_demo),
         ]

@@ -24,3 +24,66 @@ body {
     /* background-color:blue;  Голубой цвет 
     min-height: 100vh; */
 }
+
+/* Базовые стили */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider-container {
+    margin: 40px 0;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Сравнение двух версий */
+.comparison-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.original-version, .golden-version {
+    transition: all 0.3s ease;
+}
+
+.golden-version {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Начальное положение ползунка */
+    overflow: hidden;
+    clip-path: inset(0 0 0 50%); /* Эффект "разделения" */
+}
+
+/* Применение золотого сечения */
+.golden-version h1 {
+    font-size: calc(24px * 1.618); /* Пример для φ */
+}
+
+.golden-version img {
+    width: 61.8%; /* Ширина по золотому сечению */
+    height: auto;
+}
+
+.golden-version p {
+    line-height: 1.618;
+    margin: 1.618em 0;
+}
+
+:root {
+    --phi: 1.618;
+}
+.golden-version {
+    font-size: calc(var(--base-size) * var(--phi));
+}

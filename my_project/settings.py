@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-qmgaq=_ecaki-0dbo-e(t%h(7nzk+ux@n(xh)1lldt43&e3iqa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['thrillingly-resilient-flatfish.cloudpub.ru', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['thrillingly-resilient-flatfish.cloudpub.ru', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "my_site",
+    #"golden_ratio_demo",
 ]
 
 MIDDLEWARE = [
