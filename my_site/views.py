@@ -21,11 +21,3 @@ def fibbonacci_numbers(request: HttpRequest) -> HttpResponse:
 
 
 from django.http import HttpResponse
-
-def random_pattern(request: HttpRequest) -> HttpResponse:
-    svg_content = f'''
-    <svg ...>
-        <circle cx="{random.randint(10,90)}" cy="{random.randint(10,90)}" ...>
-    </svg>'''
-    
-    return HttpResponse(svg_content, content_type='image/svg+xml')

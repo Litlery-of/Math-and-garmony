@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <line x1="0" y1="100" x2="200" y2="100" stroke="#3498db" stroke-width="2">
+        <animate 
+            attributeName="y1" 
+            values="100;150;100" 
+            dur="4s" 
+            repeatCount="indefinite"/>
+    </line>
+</svg>
