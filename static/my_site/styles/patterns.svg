@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Круги с анимацией прозрачности -->
+    <circle cx="25" cy="25" r="15" fill="none" stroke="#4a90e2" stroke-width="2">
+        <animate attributeName="opacity" values="1;0.5;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Треугольники -->
+    <path d="M70 30 L85 70 L55 70 Z" fill="#e24a4a" opacity="0.8">
+        <animateTransform 
+            attributeName="transform"
+            type="rotate"
+            from="0 70 50"
+            to="360 70 50"
+            dur="8s"
+            repeatCount="indefinite"/>
+    </path>
+</svg>

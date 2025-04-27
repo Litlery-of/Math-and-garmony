@@ -18,9 +18,15 @@ main2 {
     /* padding: 100px; */
     margin-top: 20px;
 }
-
+/* 
 body {
     background: url(../../images/background.jpg);
-    /* background-color:blue;  Голубой цвет 
-    min-height: 100vh; */
+    background-color:blue;  Голубой цвет 
+    min-height: 100vh; 
+}
+*/
+body {
+    color: #492424;
+    background-color:rgb(56, 56, 56);
+    min-height: 100vh; 
 }
