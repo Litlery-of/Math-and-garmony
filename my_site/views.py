@@ -19,3 +19,5 @@ def fibbonacci_numbers(request: HttpRequest) -> HttpResponse:
     context = {"page_title": "Числа Фиббоначи"}
     return render(request, "my_site/fibbonacci_numbers.html", context)
 
+
+from django.http import HttpResponse

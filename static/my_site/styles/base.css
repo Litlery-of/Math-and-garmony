@@ -1,12 +1,13 @@
 header {
+    
     font-size: 20px;
-    color: white;
-    background-color: white;
+    color: rgb(255, 0, 0);
+    background-color: rgb(222, 210, 115);
 }
 
 main {
     font-size: 30px;
-    color: white;
+    color: rgb(108, 108, 108);
 }
 
 main2 {
@@ -18,9 +19,15 @@ main2 {
     /* padding: 100px; */
     margin-top: 20px;
 }
-
+/* 
 body {
     background: url(../../images/background.jpg);
-    /* background-color:blue;  Голубой цвет 
-    min-height: 100vh; */
+    background-color:blue;  Голубой цвет 
+    min-height: 100vh; 
+}
+*/
+body {
+    color: #492424;
+    background-color:rgb(56, 56, 56);
+    min-height: 100vh; 
 }
