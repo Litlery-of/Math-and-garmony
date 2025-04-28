@@ -2,7 +2,7 @@ header {
     
     font-size: 20px;
     color: rgb(255, 0, 0);
-    background-color: rgb(222, 210, 115);
+    background-color: rgb(50, 62, 171);
 }
 
 main {
@@ -30,4 +30,28 @@ body {
     color: #492424;
     background-color:rgb(56, 56, 56);
     min-height: 100vh; 
+}
+
+a {
+    color: rgb(0, 0, 0); /* Синий цвет */
+}
+
+  /* Посещенная ссылка */
+a:visited {
+    color: #a800a8; /* Фиолетовый цвет */
+}
+
+  /* При наведении курсора */
+a:hover {
+    color: #ff4500; /* Оранжевый цвет */
+}
+
+  /* В момент нажатия */
+a:active {
+    color: #dc143c; /* Красный цвет */
+}
+
+  /* Для фокуса (актуально для клавиатурной навигации) */
+a:focus {
+outline: 2px solid #007bff;
 }
