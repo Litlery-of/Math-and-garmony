@@ -12,7 +12,7 @@
     position: absolute;
     width: 200%;
     height: 200%;
-    background-image: url('circles.svg');
+    background-image: url('waves.svg');
     background-size: 50px 50px;
     opacity: 0.15;
     animation: move 20s linear infinite;
