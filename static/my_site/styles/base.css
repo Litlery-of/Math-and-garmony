@@ -2,7 +2,7 @@ header {
     
     font-size: 20px;
     color: rgb(255, 0, 0);
-    background-color: rgb(50, 62, 171);
+    background-color: rgb(221, 221, 221);
 }
 
 main {
@@ -38,7 +38,7 @@ a {
 
   /* Посещенная ссылка */
 a:visited {
-    color: #a800a8; /* Фиолетовый цвет */
+    color: #d79f06; /* Фиолетовый цвет */
 }
 
   /* При наведении курсора */
@@ -53,5 +53,6 @@ a:active {
 
   /* Для фокуса (актуально для клавиатурной навигации) */
 a:focus {
-outline: 2px solid #007bff;
+outline: 2px solid #d5e9ff;
 }
+
